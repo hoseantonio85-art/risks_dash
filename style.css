@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 40px;
+  color: #222;
+}
+
+.risk-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  max-width: 520px;
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.risk-level {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #ffeaea;
+  color: #c21010;
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.widget {
+  flex: 1;
+  min-width: 130px;
+  background: #fafbfc;
+  border: 1px solid #ebedf0;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+.widget:hover {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.widget .label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.widget .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.chart-widget {
+  aspect-ratio: 16 / 9;
+  padding: 12px;
+}
+
+.chart-widget canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.factors h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.factors ul {
+  list-style: none;
+}
+
+.factors li {
+  font-size: 0.9rem;
+  color: #444;
+  padding: 4px 0;
+}
